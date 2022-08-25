@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.dashboard > span{
+    font-size: 30px;
+}
+
+/*General css*/
+
+body{
+    background: #E8E8E8;
+}
+
+.sub-header{
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+/* css fpr announcement section*/
+
+.announce-content{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.announce-content p{
+    font-size: 0.8rem;
+}
+
+.announce-content .small-header{
+    font-size: 0.9rem;
+}
+
+.small-header{
+    font-weight: 800;
+}
+
+.announce-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #fff;
+    gap:10px;
+    border-radius: 5px;
+    padding:1.5em;
+}
+
+.annoucement-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:5px;
+    /*border:1px solid blue;*/
+    grid-area: announcement;
+}
+
+/* css for trending section */
+
+.trending-content{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trending-content > img{
+    max-width:70%;
+    height:auto;
+    border-radius:50%;
+}
+
+.trending-content > div{
+    align-self: center;
+}
+
+.trending-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #fff;
+    gap:10px;
+    border-radius: 5px;
+    padding:1.5em;
+    font-size: 0.8rem;
+}
+
+.trending-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:5px;
+    /*border:1px solid blue;*/
+    grid-area: trending;
+}
+
+/* css for project container*/
+
+.project-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #fff;
+    gap:10px;
+    border-radius: 10px;
+    padding:0.7em;
+    font-size: 0.9rem;
+    border-left: 10px solid #99f6e4;
+}
+
+.proj-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:20px;
+}
+
+.subheader{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.project-icons{
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 15px;
+     align-self: end;
+}
+
+.project-icons span{
+    margin-right:10px;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:5px;
+    grid-area: project;
+    /*border: 1px solid green;*/
+}
+
+/* main content css*/
+
+.main-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "project announcement"
+    "project trending"
+    "project .";
+    gap:15px;
+    padding:15px;
+    /*border:1px solid black;*/
+    grid-area: main;
+}
+
+
+/* sidebar css */
+
+.branding > ul,
+.navigation > ul{
+    padding:0;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+
+.branding  li,
+.navigation li{
+    list-style-type: none;
+    font-size:1.1rem;
+    font-weight: 600;
+}
+
+.branding-icon{
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    justify-items:start;
+}
+
+.dashboard{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.sidebar{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:30px;
+    margin-top: 5px;
+    padding: 0 20px;
+}
+
+.side{
+    grid-area: sidebar;
+    color:#fff;
+    background:#14b8a6;
+}
+
+/* header container and items css*/
+
+/* header items css*/
+.header-icon{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: header-icon;
+    align-items: center;
+}
+
+.header-icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.header-icons > button{
+    border: none;
+    padding: 8px 0px;
+    border-radius:15px;
+    background:#14b8a6;
+    color: #fff;
+    text-decoration:none;
+}
+
+.search{
+    grid-area: search;
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+}
+
+.search > input{
+    width: max(100%,300px);
+    outline:none;
+    border: none;
+    background: #e0f3f0;
+    border-radius: 10px;
+    justify-self:start;
+    padding:3px;
+}
+
+.search > span{
+    justify-self:start;
+}
+
+.id-icon-1{
+    grid-area:icon-1;
+    display: grid;
+    grid-template-columns: 45% 10% 35%;
+    align-items: center;
+    justify-items:end ;
+    gap:5%;
+}
+
+.id-icon-1 > p{
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.id-icon-1 > img{
+    width:100%;
+    height:auto;
+    border-radius: 50%;
+}
+
+.id-icon-2{
+    grid-area: icon-2;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    gap: 10px;
+}
+
+.id-icon-2 > img{
+    width:100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.id-icon-2 > div{
+    align-self: center;
+}
+
+/* main header css*/
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "search icon-1"
+    "icon-2 header-icon";
+    gap: 20px;
+    grid-area:header;
+    padding:20px;
+    padding-top: 10px;
+    background:#fff ;
+}
+
+/* css for the main body */
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+
+/*
+- style each element individually 
+- style dashboard, content cards, announcement, trending, header
+*/
